@@ -1,0 +1,189 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  // padding: 0;
+  // margin: 0;
+}
+
+label {
+  font-weight: 700;
+}
+// .issueDetails .serverLayout .treeMenu {
+//   height: 200px !important;
+//   overflow-y: auto;
+// }
+html {
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+.hint {
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 12px;
+  }
+  ::-webkit-scrollbar {
+    /*对水平流动条有效*/
+      width: 8px;
+        /*对垂直流动条有效*/
+      height: 10px;
+        /*对水平流动条有效*/
+    border-radius: 10px;
+      
+  }
+
+  /*定义滚动条的轨道颜色、内阴影及圆角*/
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(233, 220, 220, 0.3);
+    // background-color: rgb(240, 235, 235);
+    border-radius: 3px;
+    
+  }
+
+  /*定义滑块颜色、内阴影及圆角*/
+  ::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // background-color: #989898;
+      background: #B0D2FF;
+  }
+
+  /*定义右下角汇合处的样式*/
+  ::-webkit-scrollbar-corner {
+    // background: khaki;
+  }
+}
+
+#app {
+  height: 100%;
+  background: #F0F3FC;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 77%;
+}
+
+.http404 .sidebar-container {
+  background: #F0F3FC;
+  display: none;
+}
+
+.http404 .main-container {
+  background: #F0F3FC;
+  display: none;
+}
+// .dashboard .sidebar-container {
+//   background: #F0F3FC;
+//   display: none;
+// }
+
+// .dashboard .main-container {
+//   background: #F0F3FC;
+//   display: none;
+// }
+// .dashboard .navbar {
+//   display: none !important;
+// }
+
+// .dashboard .sidebar-container {
+//   display: none !important;
+// }
+.el-dropdown-menu__item {
+  font-size: 16px !important;
+}
+.dashboard .sidebar-container {
+  background: #F0F3FC;
+  display: none;
+}
+
+.dashboard .main-container {
+  background: #F0F3FC;
+  display: none;
+}
+.dataExtract .sidebar-container {
+  background: #F0F3FC;
+  display: none;
+}
+
+.dataExtract .main-container {
+  background: #F0F3FC;
+  display: none;
+}
+ 
+.details .sidebar-container {
+  background: #F0F3FC;
+  display: none;
+}
+
+.details .main-container {
+  background: #F0F3FC;
+  display: none;
+}
+
+.details .sidebar-container {
+  background: #F0F3FC;
+  display: none;
+}
+
+.details .main-container {
+  background: #F0F3FC;
+  display: none;
+}
+
+.tree {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.app-container {
+  padding: 20px;
+}

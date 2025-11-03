@@ -1,0 +1,322 @@
+#app {
+  .main-container {
+    min-height: 100%;
+    transition: margin-left .28s;
+    margin-left: $sideBarWidth;
+    position: relative;
+    background: #F0F3FC !important;
+  }
+
+  .sidebar-container {
+    // transition: width 0.28s;
+    width: $sideBarWidth !important;
+    // background-color: $menuBg;
+    // height: 92%;
+    // position: fixed;
+    position: absolute;
+    top: 62px;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    overflow: hidden;
+
+    // border-right: 1px solid #ADB5BD;
+    // reset element-ui css
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+    .scrollbar-wrapper {
+      overflow-x: hidden !important;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+      right: 0px;
+    }
+
+    .el-scrollbar {
+      height: 100%;
+      // border-right: 1px solid #ADB5BD;
+    }
+
+    &.has-logo {
+      .el-scrollbar {
+        height: calc(100% - 50px);
+      }
+    }
+
+    .is-horizontal {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .svg-icon {
+      margin-right: 16px;
+    }
+
+    .sub-el-icon {
+      margin-right: 12px;
+      margin-left: -2px;
+    }
+
+    .el-menu {
+      border: none;
+      height: 100%;
+      width: 100% !important;
+      background-color: #fff !important;
+    }
+
+    // menu hover
+    .submenu-title-noDropdown,
+    .el-submenu__title {
+      &:hover {
+        background-color: $menuHover !important;
+
+      }
+    }
+
+    .is-active>.el-submenu__title {
+      color: $subMenuActiveText !important;
+    }
+
+    & .nest-menu .el-submenu>.el-submenu__title,
+    & .el-submenu .el-menu-item {
+      min-width: $sideBarWidth !important;
+      background-color: $subMenuBg !important;
+
+      &:hover {
+        background-color: $subMenuHover !important;
+      }
+    }
+  }
+
+  .el-scrollbar__wrap {
+    // 菜单背景
+    // background: #16253C;
+    // background: #ffff;
+    // box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+
+  // .hideSidebar {
+  //   .sidebar-container {
+  //     width: 54px !important;
+
+  //   }
+
+  //   .main-container {
+  //     margin-left: 54px;
+  //       background: #F0F3FC !important;
+  //   }
+
+  //   .submenu-title-noDropdown {
+  //     padding: 0 !important;
+  //     position: relative;
+
+  //     .el-tooltip {
+  //       padding: 0 !important;
+
+  //       .svg-icon {
+  //         margin-left: 20px;
+  //       }
+
+  //       .sub-el-icon {
+  //         margin-left: 19px;
+  //       }
+  //     }
+  //   }
+
+  //   .el-submenu {
+  //     overflow: hidden;
+
+  //     &>.el-submenu__title {
+  //       padding: 0 !important;
+  //       .svg-icon {
+  //         margin-left: 20px;
+  //       }
+
+  //       .sub-el-icon {
+  //         margin-left: 19px;
+  //       }
+
+  //       .el-submenu__icon-arrow {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  //   .el-menu--collapse {
+  //     .el-submenu {
+  //       &>.el-submenu__title {
+  //         &>span {
+  //           height: 0;
+  //           width: 0;
+  //           overflow: hidden;
+  //           visibility: hidden;
+  //           display: inline-block;
+
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+  //   background: #005397;
+  //   color: #ffff;
+  //   height: 40px;
+  //   border-radius: 4px;
+  //   font-family: 'Microsoft YaHei';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 15px;
+  //   line-height: 40px;
+  //   letter-spacing: 0.08em;
+  // }
+  //  /*设置鼠标悬浮经过的颜色*/
+  //     .el-tree-node:hover > .el-tree-node__content {
+  //       background-color: #99a9bf !important;
+  //       border-radius: 4px;
+  //       color: #fff;
+  //     }
+     /*设置字体大小*/
+     .el-tree-node__label {
+       font-family: 'PingFang SC';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 18px;
+       line-height: 18px;
+      //  color: #202428;
+     }
+  /*设置鼠标点击后的颜色*/
+  .el-tree-node:focus>.el-tree-node__content {
+    background: #F0F8FF;
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2EA1FF !important;
+  }
+  .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background: #F0F8FF;
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2EA1FF;
+     border-right: 6px solid #2EA1FF;
+  }
+
+  //  /*设置鼠标悬浮经过的颜色*/
+  //     .el-tree-node:hover > .el-tree-node__content {
+  //       background-color: #99a9bf !important;
+  //       border-radius: 4px;
+  //       color: #fff;
+  //     }
+  /*设置鼠标点击后的颜色*/
+  .el-tree-node:focus>.el-tree-node__content {
+    // background-color: #005397  !important;
+    // background-color: #005397 !important;
+    // height: 90px;
+  }
+
+  /*设置字体大小*/
+  .el-tree-node__label {
+    // font-size: 15px;
+    
+
+  }
+
+  /*设置tree每行的高度*/
+  .el-tree-node__content {
+    height: 64px;
+    font-family: "PingFang SC";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      color: #202428;
+      overflow-x: hidden;
+  }
+  .el-menu--collapse .el-menu .el-submenu {
+    // min-width: $sideBarWidth !important;
+  }
+  // mobile responsive
+  .mobile {
+    .main-container {
+      // margin-left: 0px;
+    }
+
+    .sidebar-container {
+      transition: transform .28s;
+      width: $sideBarWidth !important;
+
+    }
+
+    &.hideSidebar {
+      .sidebar-container {
+        pointer-events: none;
+        transition-duration: 0.3s;
+        transform: translate3d(-$sideBarWidth, 0, 0);
+      }
+    }
+  }
+
+  .withoutAnimation {
+
+    .main-container,
+    .sidebar-container {
+      transition: none;
+    }
+  }
+}
+
+// when menu collapsed
+.el-menu--vertical {
+  &>.el-menu {
+    .svg-icon {
+      margin-right: 16px;
+    }
+
+    .sub-el-icon {
+      margin-right: 12px;
+      margin-left: -2px;
+    }
+  }
+
+  .nest-menu .el-submenu>.el-submenu__title,
+  .el-menu-item {
+    &:hover {
+      // you can use $subMenuHover
+      background-color: $menuHover !important;
+    }
+  }
+
+  // the scroll bar appears when the subMenu is too long
+  >.el-menu--popup {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track-piece {
+      background: #d3dce6;
+    }
+
+    &::-webkit-scrollbar {
+        /*对水平流动条有效*/
+          width: 8px;
+          /*对垂直流动条有效*/
+          height: 8px;
+          /*对水平流动条有效*/
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #99a9bf;
+      border-radius: 20px;
+    }
+  }
+}

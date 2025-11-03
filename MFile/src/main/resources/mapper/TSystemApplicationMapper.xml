@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.angel.minio.mapper.TSystemApplicationMapper">
+    <resultMap id="BaseResultMap" type="com.angel.minio.domain.TSystemApplication">
+        <id property="id" column="id" jdbcType="VARCHAR"/>
+        <result property="systemName" column="system_name" jdbcType="VARCHAR"/>
+        <result property="bucketName" column="bucket_name" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,system_name,bucket_name,create_time
+    </sql>
+
+    <select id="selectByAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from t_system_application
+    </select>
+
+    <insert id="saveAndUpdate" parameterType="com.angel.minio.domain.TSystemApplication">
+		INSERT INTO  t_system_application(id,system_name,bucket_name,create_time)
+		VALUES (
+				   #{systemApplication.id},
+				   #{systemApplication.systemName},
+				   #{systemApplication.bucketName},
+				   #{systemApplication.createTime}
+			   )
+			ON CONFLICT (ID) DO UPDATE
+				set system_name = #{systemApplication.systemName},
+					bucket_name = #{systemApplication.bucketName},
+					create_time = #{systemApplication.createTime}
+					;
+	</insert>
+
+    <delete id="deleteById" parameterType="java.lang.String">
+      delete from t_system_application where id = #{id}
+    </delete>
+
+    <delete id="deleteByBucketName" parameterType="java.lang.String">
+      delete from t_system_application where bucket_name = #{bucketName}
+    </delete>
+
+
+</mapper>

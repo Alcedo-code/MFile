@@ -1,0 +1,335 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+  font-size: 16px;
+}
+
+.issuePopover {
+  padding: 0 !important;
+  border-radius: 8px;
+}
+
+//解决横向滚动条无法触发问题
+.el-table .el-table__fixed {
+  height: auto !important;
+  bottom: 16px !important;
+
+  &::before {
+    background-color: transparent;
+  }
+}
+
+/**
+改变边框颜色
+ */
+.el-table--border,
+.el-table--group {
+  border: 1px solid #8A8A8A !important;
+}
+
+/**
+改变表格内竖线颜色
+ */
+.el-table--border td,
+.el-table--border th,
+.el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+  border-right: 1px solid #8A8A8A !important;
+}
+
+/**
+改变表格内行线颜色
+ */
+.el-table td,
+.el-table th.is-leaf {
+  border-bottom: 1px solid #8A8A8A !important;
+}
+
+.el-table thead tr th {
+  border-color: #8c939d;
+}
+
+/**
+改变表格内行线颜色
+ */
+.el-table td,
+.el-table th.is-leaf {
+  // border-bottom: 1px solid #ddd!important;
+  border: 1.4px solid #eff2f5 !important;
+  font-size: 18px !important;
+  //   color: #646A73 !important;
+}
+
+.el-table thead tr th {
+  // border-color: #8c939d;
+  border: 1.4px solid #eff2f5 !important;
+  font-family: "PingFang SC" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 18px;
+  color: #202428 !important;
+}
+
+/* g改变表头字体颜色 */
+.el-table thead {
+  // color: black;
+  background: #fafafa !important;
+  border: 1.4px solid #eff2f5 !important;
+}
+
+.el-table--border,
+.el-table--group {
+  border: 1.4px solid #eff2f5 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border: 1px solid rgb(59, 53, 53);
+  background: #409EFF !important;
+}
+
+.el-radio__inner {
+  border: 1px solid rgb(59, 53, 53);
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.el-checkbox__inner::after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  content: "";
+  border: 1px solid #FFF;
+  border-left: 0;
+  border-top: 0;
+  height: 10px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  -webkit-transform: rotate(45deg) scaleY(0);
+  transform: rotate(45deg) scaleY(0);
+  width: 3px;
+  -webkit-transition: -webkit-transform .15s ease-in .05s;
+  transition: -webkit-transform .15s ease-in .05s;
+  transition: transform .15s ease-in .05s;
+  transition: transform .15s ease-in .05s, -webkit-transform .15s ease-in .05s;
+  transition: transform .15s ease-in .05s, -webkit-transform .15s ease-in .05s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.el-checkbox.is-bordered.el-checkbox--small .el-checkbox__inner {
+  width: 13px;
+  height: 13px;
+}
+
+.el-checkbox.is-bordered.el-checkbox--small .el-checkbox__inner::after {
+  height: 6px;
+  width: 3px;
+  margin-left: -4px;
+}
+
+// 数据映射使用
+.el-collapse-item__arrow {
+  margin: 0 0.5rem 0 auto;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  font-weight: 300;
+  transform: rotate(270deg);
+  font-size: 20px;
+  color: #202428;
+}
+
+.el-checkbox__inner {
+  width: 20px;
+  height: 20px;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+
+    }
+  }
+}
+
+.dataUploading .el-upload {
+  width: 80%;
+  margin: 0 auto;
+}
+
+//   .v-modal{
+//   background: none;
+// }
+.el-radio__input.is-disabled+span.el-radio__label {
+  color: #606266 !important;
+}
+
+.el-upload {
+  display: block;
+}
+
+.el-upload-list {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.el-upload-dragger {
+  // width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  //  height: 50%;
+  height: 195px;
+}
+
+// .el-tree-node.is-checked>.el-tree-node__content:hover{
+// height: 90px;
+// color: #ffff;
+// }
+.el-upload__tip {
+  width: 100%;
+  text-align: center;
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+
+  transform-origin: center top;
+  z-index: 2005;
+  position: absolute;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-input__inner {
+  border-color: rgb(133, 133, 133);
+  color: #000;
+}
+
+.el-input.is-disabled .el-input__inner {
+  background-color: #F5F7FA;
+  border-color: #858585;
+  color: #000;
+}
+
+.table .el-input__inner {
+  border-color: #D4D4D4;
+}
+
+.el-textarea__inner {
+  border: 1px solid #858585;
+}
+
+.table .el-input-group__prepend {
+  color: #ffff;
+}
+
+//修改动画的大小  给文字加粗效果
+.el-loading-spinner {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+//修改文字的大小
+.el-loading-mask .el-loading-spinner .el-loading-text {
+  font-size: 18px;
+  color: #ffff;
+
+}
+
+.el-loading-spinner i {
+  color: #ffff;
+}
+
+.el-dialog__title {
+  font-family: 'Microsoft YaHei';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #374C64;
+}
+
+.serve .el-checkbox__label {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.table .el-checkbox.is-bordered {
+  height: 44px;
+}
+
+.serve .el-checkbox.is-bordered {
+  height: 44px;
+}
+
+.dataAnalysis .el-checkbox.is-bordered {
+  height: 44px;
+}
+
+.dataAnalysis .el-checkbox__label {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.table .el-checkbox__label {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.el-dialog__header {
+  width: 96%;
+  text-align: left;
+  margin-left: 20px;
+  padding: 8px;
+  border-bottom: 1px solid #000000;
+  line-height: 27px;
+}
+
+.el-button--mini,
+.el-button--small {
+  font-size: 14px;
+}
+
+.el-checkbox.is-bordered.el-checkbox--small .el-checkbox__label {
+  font-size: 14px;
+}
+
+.el-card__header {
+  padding: 10px 20px;
+}
+
+// 树
+.el-tree-node.is-expanded>.el-tree-node__children {
+  overflow: visible;
+}

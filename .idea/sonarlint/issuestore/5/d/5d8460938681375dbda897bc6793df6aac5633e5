@@ -1,0 +1,48 @@
+
+Y
+java:S1117K">Rename "bucketName" which hides the field declared at line 63.(ñğ–ûÿÿÿÿ
+Y
+java:S1117b">Rename "bucketName" which hides the field declared at line 63.(ñğ–ûÿÿÿÿ
+Z
+java:S1117›">Rename "bucketName" which hides the field declared at line 63.(ñğ–ûÿÿÿÿ
+Z
+java:S1117Í">Rename "bucketName" which hides the field declared at line 63.(ñğ–ûÿÿÿÿ
+U
+java:S4719">Replace charset name argument with StandardCharsets.ISO_8859_1(§„¯¢
+V	java:S899œ";Do something with the "boolean" value returned by "delete".(Ò¦ˆ™øÿÿÿÿ
+j
+java:S4042œ"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(Ò¦ˆ™øÿÿÿÿ
+F
+java:S2093ƒ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Z
+java:S1117°">Rename "bucketName" which hides the field declared at line 63.(ñğ–ûÿÿÿÿ
+Z
+java:S1117Ï">Rename "bucketName" which hides the field declared at line 63.(ñğ–ûÿÿÿÿ
+W
+java:S1854²";Remove this useless assignment to local variable "content".(¥õğØÿÿÿÿÿ
+=
+java:S1168Ë"&Return an empty array instead of null.(¥¹ï
+]	java:S899û"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+F
+java:S2093ù"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+p
+java:S1192ï"YDefine a constant instead of duplicating this literal "application/octet-stream" 4 times.(‹ºÃá
+t	java:S135Ü"YReduce the total number of break and continue statements in this loop to use at most one.(¾³ºÜûÿÿÿÿ
+Q
+java:S1141ß"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Z
+java:S1155´">Use isEmpty() to check whether the collection is empty or not.(†åËÅşÿÿÿÿ
+y
+java:S1488d"^Immediately return this expression instead of assigning it to the temporary variable "result".(»Ê´›ıÿÿÿÿ
+s
+java:S1488½"\Immediately return this expression instead of assigning it to the temporary variable "flag".(˜«Ÿä
+^
+java:S2259~"HA "NullPointerException" could be thrown; "sourceName" is nullable here.(–õØÙ
+k
+java:S2095º"OUse try-with-resources or close this "ImageOutputStream" in a "finally" clause.(Åõ“ìÿÿÿÿÿ
+m
+java:S2095‡"QUse try-with-resources or close this "WritableByteChannel" in a "finally" clause.(ííêÖùÿÿÿÿ
+i
+java:S2095‡"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(…Øáúÿÿÿÿ
+m
+java:S2095ˆ"QUse try-with-resources or close this "WritableByteChannel" in a "finally" clause.(ÅÚîŸúÿÿÿÿ

@@ -1,0 +1,40 @@
+
+p
+java:S3008	"URename this field "FILE_IMAGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚıÕıÿÿÿÿ
+k
+java:S3008
+"URename this field "FILE_VIDEO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è¸‚†
+r
+java:S3008"WRename this field "FILE_DEFAULT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ğó¡ùÿÿÿÿ
+k
+java:S3008"URename this field "FILE_AUDIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆë““
+i
+java:S3008"NRename this field "DIR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Ô·Şÿÿÿÿÿ
+8
+java:S2386"Make this member "protected".(«Ô·Şÿÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(Ôáñàûÿÿÿÿ
+G
+java:S1135"2Complete the task associated to this TODO comment.(£°§\
+q
+java:S1104	"VMake FILE_IMAGE a static final constant or non-public and provide accessors if needed.(ÚıÕıÿÿÿÿ
+l
+java:S1104
+"VMake FILE_VIDEO a static final constant or non-public and provide accessors if needed.(è¸‚†
+s
+java:S1104"XMake FILE_DEFAULT a static final constant or non-public and provide accessors if needed.(˜ğó¡ùÿÿÿÿ
+l
+java:S1104"VMake FILE_AUDIO a static final constant or non-public and provide accessors if needed.(ˆë““
+j
+java:S1104"OMake DIR a static final constant or non-public and provide accessors if needed.(«Ô·Şÿÿÿÿÿ
+K
+java:S1444	"0Make this "public static FILE_IMAGE" field final(ÚıÕıÿÿÿÿ
+F
+java:S1444
+"0Make this "public static FILE_VIDEO" field final(è¸‚†
+M
+java:S1444"2Make this "public static FILE_DEFAULT" field final(˜ğó¡ùÿÿÿÿ
+F
+java:S1444"0Make this "public static FILE_AUDIO" field final(ˆë““
+D
+java:S1444")Make this "public static DIR" field final(«Ô·Şÿÿÿÿÿ

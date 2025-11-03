@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.angel.minio.mapper.FileRepositoryMapper">
+
+    <select id="findById" resultType="com.angel.minio.domain.File">
+    SELECT id, filename, location, mimetype
+    FROM t_file where id= #{id} ;
+    </select>
+
+	<select id="findFileIdAndName" resultType="java.util.Map">
+	select id,fileName as name from t_file where id
+      IN
+		<foreach item="id" collection="ids" open="(" separator="," close=")">
+			'${id}'
+		</foreach>
+	</select>
+
+    <insert id="saveAndUpdate" parameterType="com.angel.minio.domain.File">
+		INSERT INTO  t_file(id, filename, location, mimetype)
+		VALUES (
+				   #{file.id},
+				   #{file.fileName},
+				   #{file.location},
+				   #{file.mimeType}
+			   )
+			ON CONFLICT (ID) DO UPDATE
+				set filename = #{file.fileName},
+					location = #{file.location},
+					mimetype = #{file.mimeType}
+	</insert>
+    <!-- 删除文件表 -->
+    <delete id="deleteById" parameterType="java.lang.String">
+      delete from t_file where id = #{id}
+    </delete>
+
+</mapper>

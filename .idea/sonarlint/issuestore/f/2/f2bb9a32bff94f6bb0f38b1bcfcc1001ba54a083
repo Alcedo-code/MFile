@@ -1,0 +1,23 @@
+
+J
+java:S37408"/Provide the parametrized type for this generic.(Ô´‡÷ýÿÿÿÿ
+J
+java:S3740a"/Provide the parametrized type for this generic.(ÔÝÙÃùÿÿÿÿ
+F
+java:S3740Œ"/Provide the parametrized type for this generic.(ï‚¿Î
+:
+java:S1659@"%Declare "subType" on a separate line.(ðžß7
+_
+java:S2147G"DCombine this catch with the one at line 69, which has the same body.(ÐÐ¹óúÿÿÿÿ
+:
+java:S1659j"%Declare "subType" on a separate line.(ðžß7
+`
+java:S2147q"ECombine this catch with the one at line 111, which has the same body.(ÐÐ¹óúÿÿÿÿ
+i
+java:S3776Œ"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ï‚¿Î
+]
+java:S2259•"FA "NullPointerException" could be thrown; "filename" is nullable here.(Ó³Žü
+Y
+java:S2259“"BA "NullPointerException" could be thrown; "file" is nullable here.(„‰™€
+]
+java:S2259™"FA "NullPointerException" could be thrown; "mimeType" is nullable here.(†ß¨Ž
